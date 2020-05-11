@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="testArray">
+        <item>学而篇</item>
+        <item>为政篇</item>
+        <item>八佾篇</item>
+        <item>里仁篇</item>
+        <item>公冶长篇</item>
+        <item>雍也篇</item>
+        <item>述而篇</item>
+        <item>泰伯篇</item>
+        <item>子罕篇</item>
+        <item>乡党篇</item>
+        <item>先进篇</item>
+        <item>颜渊篇</item>
+        <item>子路篇</item>
+        <item>宪问篇</item>
+        <item>卫灵公篇</item>
+        <item>季氏篇</item>
+        <item>阳货篇</item>
+        <item>微子篇</item>
+        <item>子张篇</item>
+        <item>尧曰篇</item>
+    </string-array>
+</resources>

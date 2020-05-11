@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/single_user_message"
+            android:icon="@drawable/ic_message_black_24dp"
+            android:title="我的消息" />
+        <item
+            android:id="@+id/single_user_text"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="我的贴子" />
+        <item
+            android:id="@+id/single_user_record"
+            android:icon="@drawable/ic_question_answer_black_24dp"
+            android:title="我的回复"/>
+        <item
+            android:id="@+id/single_user_note"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="我的笔记"/>
+        <item
+            android:id="@+id/single_exit"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="退出" />
+    </group>
+
+</menu>

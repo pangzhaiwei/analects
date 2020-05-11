@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--AlbumView（唱片机）属性-->
+    <declare-styleable name="AlbumView">
+        <!--图片半径-->
+        <attr name="picture_radius" format="dimension"/>
+        <!--图片资源id-->
+        <attr name="src" format="reference"/>
+        <!--唱片旋转速度-->
+        <attr name="disk_rotate_speed" format="float"/>
+    </declare-styleable>
+
+    <!--第三方fab-->
+    <declare-styleable name="FabTagLayout">
+        <attr name="tagText" format="string" />
+    </declare-styleable>
+
+    <attr name="animationMode">
+        <enum name="fade" value="0"/>
+        <enum name="scale" value="1"/>
+        <enum name="bounce" value="2"/>
+    </attr>
+
+    <attr name="position">
+        <enum name="left_bottom" value="0"/>
+        <enum name="right_bottom" value="1"/>
+    </attr>
+
+    <declare-styleable name="MultiFloatingActionButton">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="switchFabIcon" format="reference"/>
+        <attr name="switchFabColor" format="color"/>
+        <attr name="animationDuration" format="integer"/>
+        <attr name="animationMode"/>
+        <attr name="position"/>
+    </declare-styleable>
+
+</resources>

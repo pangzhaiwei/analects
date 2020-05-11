@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AddReplyActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_add_reply"
+        android:background="@color/colorNetease"
+        app:titleTextColor="@color/colorCCBWhite"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:title="评论帖子"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edit_reply_add"
+        android:hint="输入评论内容！"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="发送评论"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_submit_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

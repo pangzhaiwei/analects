@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">学而思</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="open">open</string>
+    <string name="stop">stop</string>
+
+</resources>

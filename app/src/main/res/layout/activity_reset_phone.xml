@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ResetPhoneActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_logined_reset_phone"
+        android:background="@color/colorNetease"
+        app:titleTextColor="@color/colorCCBWhite"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:title="修改手机号码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_phone_black_24dp" />
+
+            <EditText
+                android:id="@+id/edit_reset_user_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:maxLines="1"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:hint="新的手机号码" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:text="提交"
+            android:id="@+id/btn_submit_reset_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

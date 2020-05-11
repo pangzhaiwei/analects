@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhaowei.analects.view.MultiFloatingActionButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/floating_music"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:switchFabColor="#F44336"
+    app:backgroundColor="#F3F1F1"
+    app:switchFabIcon="@drawable/ic_add_black_24dp"
+    app:animationMode="scale">
+
+    <com.zhaowei.analects.view.TagFabLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tagText="前往顶部">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_expand_less_black_24dp"
+            app:backgroundTint="#FFFFFF"
+            app:fabSize="mini" />
+    </com.zhaowei.analects.view.TagFabLayout>
+
+    <com.zhaowei.analects.view.TagFabLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tagText="正在播放">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gps_fixed_black_24dp"
+            app:backgroundTint="#F7F8FA"
+            app:fabSize="mini" />
+    </com.zhaowei.analects.view.TagFabLayout>
+
+</com.zhaowei.analects.view.MultiFloatingActionButton>

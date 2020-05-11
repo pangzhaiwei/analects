@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <ImageView
+        android:id="@+id/nf_album_imgv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_web" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nf_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="shelter"
+            android:textColor="#101010"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/nf_ll_btns"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/nf_previous_imgv"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_skip_previous_black_80dp" />
+
+            <ImageView
+                android:id="@+id/nf_pause_imgv"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_play_circle_outline_black_80dp" />
+
+            <ImageView
+                android:id="@+id/nf_next_imgv"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_skip_next_black_80dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

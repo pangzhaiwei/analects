@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_music_playctivity"
+        android:background="@color/colorNetease"
+        app:titleTextColor="@color/colorCCBWhite"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:title="正在播放"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:background="@drawable/bg"
+        android:id="@+id/relative_layout_control_part"
+        android:layout_below="@+id/toolbar_music_playctivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/play_ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_volume_up_black_24dp" />
+
+            <SeekBar
+                android:id="@+id/seekbar_sound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp" />
+
+        </LinearLayout>
+
+        <com.zhaowei.analects.view.AlbumView
+            android:id="@+id/album_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play_ll_top"
+            android:layout_centerHorizontal="true"
+            app:picture_radius="70dp"
+            app:disk_rotate_speed="0.2"
+            app:src="@drawable/snipaste_card"/>
+
+        <TextView
+            android:layout_below="@+id/album_view"
+            android:id="@+id/tv_music_playing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Shelter"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/play_ll_play_seekbars"
+            android:layout_below="@+id/tv_music_playing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_play_currenttime"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="00:00" />
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6" />
+
+            <TextView
+                android:id="@+id/tv_play_totaltime"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="00:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/play_ll_play_seekbars"
+            android:id="@+id/play_ll_play_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_music_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="#00000000"
+                android:src="@drawable/ic_skip_previous_black_80dp"
+                android:text="previous" />
+
+            <ImageButton
+                android:id="@+id/btn_music_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:src="@drawable/ic_play_circle_outline_black_80dp"
+                android:text="Play" />
+
+            <ImageButton
+                android:id="@+id/btn_music_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="#00000000"
+                android:src="@drawable/ic_skip_next_black_80dp"
+                android:text="next" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="下载"
+            android:id="@+id/btn_play_music_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:text="倍速"
+            android:id="@+id/btn_play_music_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_show_content"
+        android:visibility="gone"
+        android:padding="15dp"
+        android:layout_below="@+id/toolbar_music_playctivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="回到播放页面"
+            android:id="@+id/btn_play_music_back_to_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="测试"
+            android:layout_below="@+id/btn_play_music_back_to_control"
+            android:id="@+id/tv_play_music_show_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

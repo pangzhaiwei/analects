@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhaowei.analects.view.MultiFloatingActionButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/floating_note"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:switchFabColor="#31c44c"
+    app:backgroundColor="#F3F1F1"
+    app:switchFabIcon="@drawable/ic_create_black_24dp"
+    app:animationMode="scale">
+
+    <com.zhaowei.analects.view.TagFabLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tagText="回到顶部">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_expand_less_white_24dp"
+            app:backgroundTint="#E91E63"
+            app:fabSize="mini" />
+    </com.zhaowei.analects.view.TagFabLayout>
+
+    <com.zhaowei.analects.view.TagFabLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tagText="新建">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_black_24dp"
+            app:backgroundTint="#673AB7"
+            app:fabSize="mini" />
+    </com.zhaowei.analects.view.TagFabLayout>
+
+</com.zhaowei.analects.view.MultiFloatingActionButton>
