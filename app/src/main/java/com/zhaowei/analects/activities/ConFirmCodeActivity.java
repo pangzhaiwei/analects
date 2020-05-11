@@ -112,7 +112,7 @@ public class ConFirmCodeActivity extends BaseActivity {
             }
         });
 
-        MobSDK.init(this, "2b074e556b06a", "5632b0cd1270beb9e3e96126f58baaf4");
+        MobSDK.init(this, "按第三方sdk要求填入的信息", "按第三方sdk要求填入的信息");
         EventHandler eventHandler = new EventHandler(){       // 操作回调
             @Override
             public void afterEvent(int event, int result, Object data) {
